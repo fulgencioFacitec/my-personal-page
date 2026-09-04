@@ -1,1 +1,146 @@
-Hola Gabriel Duarte
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Duarte | Ingeniero de Software</title>
+    <meta name="description" content="Portafolio personal de Oscar Duarte, Desarrollador Web e Ingeniero de Software.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Animated Blobs -->
+    <div class="bg-gradients">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">&lt;OscarDuarte /&gt;</a>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hola, soy <br> <span class="text-gradient">Oscar Duarte</span></h1>
+                <h2 class="hero-subtitle">Ingeniero de Software</h2>
+                <p class="hero-text">
+                    Me encanta el mundo de la tecnología y el desarrollo de software. He trabajado en diversos proyectos donde he podido aplicar y expandir mis habilidades. Siempre estoy en constante aprendizaje, creando soluciones escalables y diseños increíbles.
+                </p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
+                    <a href="#contact" class="btn btn-secondary glass">Contáctame</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-container">
+                    <img src="assets/avatar.jpg" alt="Oscar Duarte Avatar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Mi <span class="text-gradient">Stack Tecnológico</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card glass">
+                    <i class="fa-brands fa-html5 skill-icon"></i>
+                    <h3 class="skill-title">HTML & CSS Moderno</h3>
+                    <p class="skill-desc">Arquitectura semántica, Flexbox, Grid y diseño responsivo avanzado.</p>
+                </div>
+                <div class="skill-card glass">
+                    <i class="fa-brands fa-js skill-icon"></i>
+                    <h3 class="skill-title">JavaScript (ES6+)</h3>
+                    <p class="skill-desc">Lógica de cliente, asincronía y manipulación dinámica del DOM.</p>
+                </div>
+                <div class="skill-card glass">
+                    <i class="fa-brands fa-react skill-icon"></i>
+                    <h3 class="skill-title">Frameworks UI</h3>
+                    <p class="skill-desc">Construcción de interfaces reactivas y componentes reutilizables.</p>
+                </div>
+                <div class="skill-card glass">
+                    <i class="fa-brands fa-node-js skill-icon"></i>
+                    <h3 class="skill-title">Backend & APIs</h3>
+                    <p class="skill-desc">Desarrollo de servicios RESTful y arquitecturas escalables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Últimos <span class="text-gradient">Proyectos</span></h2>
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-img">
+                        <i class="fa-solid fa-image fa-2x"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Web App</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <h3 class="project-title">E-commerce Dashboard</h3>
+                        <p class="project-desc">Panel de control administrativo con gráficos en tiempo real y gestión de inventario.</p>
+                        <a href="#" class="btn btn-secondary glass" style="padding: 8px 16px; font-size: 0.9rem;">Ver código</a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-img">
+                        <i class="fa-solid fa-image fa-2x"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Landing Page</span>
+                            <span class="tag">CSS Animation</span>
+                        </div>
+                        <h3 class="project-title">Agencia Creativa</h3>
+                        <p class="project-desc">Sitio web promocional altamente interactivo con animaciones scroll-driven.</p>
+                        <a href="#" class="btn btn-secondary glass" style="padding: 8px 16px; font-size: 0.9rem;">Ver código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section & Footer -->
+    <footer id="contact">
+        <div class="container">
+            <h2 class="section-title">Sigamos en <span class="text-gradient">Contacto</span></h2>
+            <div class="social-links">
+                <a href="#" class="glass" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="glass" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="glass" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="glass" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Oscar Duarte. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
