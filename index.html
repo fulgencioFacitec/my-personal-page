@@ -1,146 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar Duarte | Ingeniero de Software</title>
-    <meta name="description" content="Portafolio personal de Oscar Duarte, Desarrollador Web e Ingeniero de Software.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Fulgencio Duarte Giménez | Ingeniería de Software</title>
+  <meta name="description" content="Portafolio minimalista de Gabriel Fulgencio Duarte Giménez — Programador Junior fascinado por arquitectura y hardware." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Background Animated Blobs -->
-    <div class="bg-gradients">
-        <div class="gradient-blob blob-1"></div>
-        <div class="gradient-blob blob-2"></div>
+  <!-- Liquid background -->
+  <div class="ambient">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+  </div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">&lt;Gabriel<span>Duarte</span> /&gt;</a>
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#enfoque">Enfoque</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="nav-cta" href="#contacto">Hablemos</a>
     </div>
+  </header>
 
-    <!-- Sticky Navigation -->
-    <header id="header">
-        <div class="container">
-            <a href="#" class="logo">&lt;OscarDuarte /&gt;</a>
-            <nav>
-                <ul>
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Ingeniería de Software · Asunción, PY</span>
+          <h1>
+            Hola, soy<br>
+            <span class="accent">Gabriel Fulgencio</span><br>
+            Duarte Giménez
+          </h1>
+          <p class="lead">
+            Programador <strong>junior</strong> en formación, construyendo con <em>OpenCode + Muse Spark</em>, Vercel y Git. Me mueve entender cómo funciona todo <strong>por dentro</strong> — desde el código hasta el silicio.
+          </p>
+          <div class="hero-actions">
+            <a href="#habilidades" class="btn btn-primary">Ver habilidades</a>
+            <a href="https://github.com/fulgencioFacitec" target="_blank" rel="noopener" class="btn btn-glass"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+          <div class="hero-meta">
+            <span><i class="fa-solid fa-code"></i> Junior Developer</span>
+            <span><i class="fa-solid fa-microchip"></i> Arquitectura & Hardware</span>
+            <span><i class="fa-solid fa-rocket"></i> Aprendizaje continuo</span>
+          </div>
         </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hola, soy <br> <span class="text-gradient">Oscar Duarte</span></h1>
-                <h2 class="hero-subtitle">Ingeniero de Software</h2>
-                <p class="hero-text">
-                    Me encanta el mundo de la tecnología y el desarrollo de software. He trabajado en diversos proyectos donde he podido aplicar y expandir mis habilidades. Siempre estoy en constante aprendizaje, creando soluciones escalables y diseños increíbles.
-                </p>
-                <div class="cta-group">
-                    <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
-                    <a href="#contact" class="btn btn-secondary glass">Contáctame</a>
-                </div>
+        <div class="hero-visual">
+          <div class="glass-card hero-card">
+            <div class="avatar-wrap">
+              <div class="avatar-liquid">
+                <span>GD</span>
+              </div>
+              <div class="avatar-ring"></div>
             </div>
-            <div class="hero-image">
-                <div class="avatar-container">
-                    <img src="assets/avatar.jpg" alt="Oscar Duarte Avatar">
-                </div>
+            <div class="hero-card-text">
+              <h3>Gabriel F. Duarte</h3>
+              <p>Estudiante de Ingeniería de Software<br>Facultad de Ciencias y Tecnología</p>
+              <div class="mini-tags">
+                <span>OpenCode</span><span>Vercel</span><span>GitHub</span>
+              </div>
             </div>
+            <!-- floating chips -->
+            <div class="chip chip-1"><i class="fa-solid fa-memory"></i> RAM / Caché</div>
+            <div class="chip chip-2"><i class="fa-solid fa-microchip"></i> CPU Pipelines</div>
+            <div class="chip chip-3"><i class="fa-brands fa-docker"></i> Docker · isol.</div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title">Mi <span class="text-gradient">Stack Tecnológico</span></h2>
-            <div class="skills-grid">
-                <div class="skill-card glass">
-                    <i class="fa-brands fa-html5 skill-icon"></i>
-                    <h3 class="skill-title">HTML & CSS Moderno</h3>
-                    <p class="skill-desc">Arquitectura semántica, Flexbox, Grid y diseño responsivo avanzado.</p>
-                </div>
-                <div class="skill-card glass">
-                    <i class="fa-brands fa-js skill-icon"></i>
-                    <h3 class="skill-title">JavaScript (ES6+)</h3>
-                    <p class="skill-desc">Lógica de cliente, asincronía y manipulación dinámica del DOM.</p>
-                </div>
-                <div class="skill-card glass">
-                    <i class="fa-brands fa-react skill-icon"></i>
-                    <h3 class="skill-title">Frameworks UI</h3>
-                    <p class="skill-desc">Construcción de interfaces reactivas y componentes reutilizables.</p>
-                </div>
-                <div class="skill-card glass">
-                    <i class="fa-brands fa-node-js skill-icon"></i>
-                    <h3 class="skill-title">Backend & APIs</h3>
-                    <p class="skill-desc">Desarrollo de servicios RESTful y arquitecturas escalables.</p>
-                </div>
-            </div>
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Habilidades <span class="muted">en construcción</span></h2>
+          <p>Perfil junior evaluado desde mi uso real de OpenCode: itero rápido en VS Code, documento, despliego en Vercel y aprendo en público.</p>
         </div>
+
+        <div class="grid-3">
+          <article class="glass-card skill">
+            <div class="icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Programación Junior</h3>
+            <p>HTML semántico, CSS moderno, JavaScript ES6+, Python básico. Enfoque en código legible, responsive y buenas prácticas de Git.</p>
+            <div class="bar"><span style="width: 68%"></span></div>
+            <small>Aprendiendo · practicando diario</small>
+          </article>
+
+          <article class="glass-card skill">
+            <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Flujo OpenCode</h3>
+            <p>Uso diario de <strong>Muse Spark</strong> en workspace local, planes → builds, verificación con `vercel dev` / `python -m http.server`, commits atómicos.</p>
+            <div class="bar"><span style="width: 72%"></span></div>
+            <small>VS Code · Git · Vercel · Node 24</small>
+          </article>
+
+          <article class="glass-card skill">
+            <div class="icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3>Arquitectura & Hardware</h3>
+            <p>Fascinación por cómo el software toca el hardware: ISA, pipelines, jerarquía de memoria, I/O, y ensamblaje de PCs. De la matriz del infierno a contenedores aislados.</p>
+            <div class="bar"><span style="width: 80%"></span></div>
+            <small>Lecturas: The Docker Blueprint · FACITEC</small>
+          </article>
+        </div>
+
+        <div class="glass-card quote">
+          <p>“No solo quiero que funcione en mi máquina — quiero entender <em>por qué</em> funciona en cualquier lugar.”</p>
+          <span>— Inspirado en Docker: construye una vez, ejecuta en cualquier lugar</span>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Últimos <span class="text-gradient">Proyectos</span></h2>
-            <div class="projects-grid">
-                <div class="project-card glass">
-                    <div class="project-img">
-                        <i class="fa-solid fa-image fa-2x"></i>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Web App</span>
-                            <span class="tag">React</span>
-                        </div>
-                        <h3 class="project-title">E-commerce Dashboard</h3>
-                        <p class="project-desc">Panel de control administrativo con gráficos en tiempo real y gestión de inventario.</p>
-                        <a href="#" class="btn btn-secondary glass" style="padding: 8px 16px; font-size: 0.9rem;">Ver código</a>
-                    </div>
-                </div>
-                <div class="project-card glass">
-                    <div class="project-img">
-                        <i class="fa-solid fa-image fa-2x"></i>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Landing Page</span>
-                            <span class="tag">CSS Animation</span>
-                        </div>
-                        <h3 class="project-title">Agencia Creativa</h3>
-                        <p class="project-desc">Sitio web promocional altamente interactivo con animaciones scroll-driven.</p>
-                        <a href="#" class="btn btn-secondary glass" style="padding: 8px 16px; font-size: 0.9rem;">Ver código</a>
-                    </div>
-                </div>
+    <!-- ENFOQUE -->
+    <section id="enfoque" class="section alt">
+      <div class="container">
+        <div class="grid-2">
+          <div class="glass-card focus">
+            <h3><i class="fa-solid fa-bullseye"></i> Enfoque actual</h3>
+            <ul>
+              <li><strong>Fundamentos sólidos</strong> — Estructuras, lógica, y diseño minimalista antes que frameworks pesados.</li>
+              <li><strong>Hardware primero</strong> — Entender CPU, RAM, buses y almacenamiento para escribir software más eficiente.</li>
+              <li><strong>Deploy continuo</strong> — GitHub → Vercel, preview deployments, instant rollback.</li>
+            </ul>
+          </div>
+          <div class="glass-card focus">
+            <h3><i class="fa-solid fa-compass"></i> Próximos pasos</h3>
+            <ul>
+              <li>Profundizar JS / React y consumir APIs REST</li>
+              <li>Laboratorio de arquitectura: simulador de caché & ensamblaje</li>
+              <li>Docker multi-stage + CI con GitHub Actions</li>
+            </ul>
+            <div class="stack">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>Python</span><span>Git</span><span>Vercel</span><span>Docker</span>
             </div>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Contact Section & Footer -->
-    <footer id="contact">
-        <div class="container">
-            <h2 class="section-title">Sigamos en <span class="text-gradient">Contacto</span></h2>
-            <div class="social-links">
-                <a href="#" class="glass" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="#" class="glass" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="glass" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" class="glass" title="Email"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-            <p class="copyright">&copy; 2026 Oscar Duarte. Todos los derechos reservados.</p>
+  <footer id="contacto" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Sigamos en contacto</h3>
+        <p>¿Proyecto universitario, idea o charla sobre hardware? Estoy aprendiendo y abierto a colaborar.</p>
+        <div class="social">
+          <a href="https://github.com/fulgencioFacitec" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:gabrielfulgencio20@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
-    </footer>
+      </div>
+      <div class="glass-card footer-card">
+        <p><i class="fa-solid fa-location-dot"></i> Paraguay · FACITEC</p>
+        <p><i class="fa-solid fa-envelope"></i> gabrielfulgencio20@gmail.com</p>
+        <p class="copy">© 2026 Gabriel Fulgencio Duarte Giménez. Liquid glass · minimalista.</p>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
+  <script>
+    // nav blur on scroll
+    const nav = document.querySelector('.nav');
+    addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 20));
+  </script>
 </body>
 </html>
